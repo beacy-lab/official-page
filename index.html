@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beacy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+            line-height: 1.7;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #f0f6fc;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #30363d;
+            background-color: #161b22;
+        }
+
+        .profile-text h1 {
+            font-size: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .profile-text .subtitle {
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        .section-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+            font-size: 0.85rem;
+            color: #8b949e;
+            list-style: none;
+        }
+
+        .tech-list li::before {
+            content: "- ";
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #21262d;
+            font-size: 0.8rem;
+            color: #8b949e;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1. Header / Profile -->
+        <header>
+            <img src="avatar.jpg" alt="beacy avatar" class="avatar">
+            <div class="profile-text">
+                <h1>beacy</h1>
+                <p class="subtitle">Crafting robust TUIs, elegant GUIs, and local-first systems.<br>Based in Hokkaido,
+                    Japan.</p>
+            </div>
+        </header>
+
+        <!-- 2. Specialties -->
+        <section>
+            <h2>Specialties</h2>
+            <div class="section-item">
+                <h3>Terminal User Interface (TUI)</h3>
+                <p>キーボード駆動の爆速な操作性と、端末内に広がる機能美の追求。Linuxシステムプログラミングに基づいた、堅牢で軽量なCLI/TUIツールの開発。</p>
+            </div>
+            <div class="section-item">
+                <h3>Graphical User Interface (GUI)</h3>
+                <p>macOSのネイティブな美しさと、直感的でストレスのないUX。インラインのリアルタイム編集など、思考を妨げないエディタロジックの実装。</p>
+            </div>
+        </section>
+
+        <!-- 3. Products -->
+        <section>
+            <h2>Products & Lab</h2>
+            <div class="section-item">
+                <h3>Native Markdown Editor (In Development)</h3>
+                <p>Swift/SwiftUIで構築中のmacOS専用ミニマルMarkdownエディタ。TextKitの表現力を極限まで活かした、滑らかなインライン編集体験。</p>
+            </div>
+            <div class="section-item">
+                <h3>Local Brain Proxy (Lab)</h3>
+                <p>PythonとSQLiteで構築したローカルキャッシュ型AIプロキシ。過去のプロンプトと応答をローカルに蓄積し、トークンの節約と高速なコンテキスト検索を実現。</p>
+            </div>
+        </section>
+
+        <!-- 4. Tech Stack -->
+        <section>
+            <h2>Tech Stack</h2>
+            <ul class="tech-list">
+                <li>Swift / SwiftUI</li>
+                <li>Python</li>
+                <li>C (Linux System Programming)</li>
+                <li>AWS (Serverless / Lambda / DynamoDB)</li>
+                <li>Cloudflare</li>
+                <li>SQLite / BigQuery</li>
+            </ul>
+        </section>
+
+        <!-- 5. Footer -->
+        <footer>
+            <div>
+                <!-- GitHubの組織名URLがbeacy-labのままであればそのままでOKです -->
+                <a href="https://github.com/beacy-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <div>
+                &copy; 2026 beacy
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
