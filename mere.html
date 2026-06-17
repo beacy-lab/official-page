@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mere - Snippet Manager for Engineers</title>
+    <link rel="icon" href="profile_icon.png" type="image/png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+            line-height: 1.7;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #f0f6fc;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            color: #58a6ff;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #8b949e;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: #c9d1d9;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        .back-link:hover {
+            color: #58a6ff;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #8b949e;
+            margin-top: 0.5rem;
+        }
+
+        .screenshot {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin: 3rem 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .tech-section {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .tech-list li {
+            background-color: #21262d;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        footer {
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid #21262d;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+
+        .highlight {
+            color: #58a6ff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="back-link">← Back to beacy</a>
+
+        <!-- Header -->
+        <header>
+            <h1>Mere</h1>
+            <p class="subtitle">Snippet Manager for Engineers</p>
+        </header>
+
+        <!-- Lead -->
+        <section>
+            <p class="lead">
+                <span class="highlight">ローカル</span>で完結。<span class="highlight">シンプル</span>に検索。<br>
+                あなたの<span class="highlight">スニペット</span>を、思考の速さで。
+            </p>
+            <p>
+                Mereは、エンジニアのためのmacOS専用スニペット管理アプリです。よく使うコマンド、APIの叩き方、ちょっとしたコードの断片——それらを素早く保存し、瞬時に呼び出せます。
+            </p>
+        </section>
+
+        <!-- Screenshot -->
+        <img src="mere-screenshot.png" alt="Mere App Screenshot" class="screenshot">
+
+        <!-- Features -->
+        <section>
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔍 高速検索</h3>
+                    <p>タイトルやコンテンツから即座に検索。検索バーに入力するだけで、必要なスニペットがすぐに見つかります。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💾 ローカル保存</h3>
+                    <p>すべてのデータはローカルに保存。クラウド同期なし、サインアップ不要。プライバシーとセキュリティを最優先。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 シンプルUI</h3>
+                    <p>モノトーンで洗練されたインターフェース。余計な装飾を排し、スニペット管理に集中できるデザイン。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section>
+            <h2>Use Cases</h2>
+            <p>こんなときに便利です：</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 2;">
+                <li>→ curlコマンドでのAPIテスト例を保存</li>
+                <li>→ Pythonの型ヒント構文を記録</li>
+                <li>→ git rebaseなど、よく使うけど覚えにくいコマンド</li>
+                <li>→ 正規表現のパターン集</li>
+                <li>→ よく使うSQLクエリのテンプレート</li>
+            </ul>
+        </section>
+
+        <!-- Tech Stack -->
+        <section>
+            <h2>Tech Stack</h2>
+            <div class="tech-section">
+                <p>Mereは、以下の技術で構築されています：</p>
+                <ul class="tech-list">
+                    <li>Swift</li>
+                    <li>SwiftUI</li>
+                    <li>CoreData</li>
+                    <li>macOS Native</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Crafted by <a href="index.html">beacy</a> | <a href="privacy.html">プライバシーポリシー</a></p>
+            <p>&copy; 2026 beacy</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
